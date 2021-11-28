@@ -8,7 +8,7 @@ var outputDiv = document.querySelector("#output")
 
 
 function calculateProfitAndLoss(a, b) {
-    
+     
     var sellingPrice = Number(currentPrice.value);
     var costPrice = Number(initialPrice.value);
     var sharesQuantity = Number(quantityOfShares.value);
@@ -41,7 +41,17 @@ function calculateProfitAndLoss(a, b) {
 }
 
 function submitHandler() {
+    if(document.getElementById("initial-price").value.length == 0)
+{
+    alert("Please enter valid details")
+    
+} else if (document.getElementById("shares-quantity").value.length == 0){
+    alert("Please enter valid details")
+} else if (document.getElementById("current-price").value.length == 0) {
+    alert("Please enter valid details")
+} else {
     var checkProfitOrLoss = calculateProfitAndLoss()
+}
 }
 
 checkBtn.addEventListener("click", submitHandler)
