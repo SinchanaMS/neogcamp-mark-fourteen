@@ -5,22 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profit or Loss Calculator</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
     <h1> Profit or Loss Calculator</h1>
+
+    <section>
     <label for="initial-price">Initial Price</label>
-    <input id="initial-price" type="number" required ></input>
+    <input class="tracking-wide" id="initial-price" type="number" required ></input>
 
     <label for="shares-quantity">No. of Shares</label>
-    <input id="shares-quantity" type="number" required ></input>
+    <input class="tracking-wide" id="shares-quantity" type="number" required ></input>
 
     <label for="current-price">Current Price</label>
-    <input id="current-price" type="number" required></input>
+    <input class="tracking-wide" id="current-price" type="number" required></input>
 
-    <button id="check-btn">Tell Me!</button>
+    <button id="check-btn">Check</button>
 
     <div id="output"></div>
-
+</section>
     <script src="calc.js" type="text/javascript"></script>
 </body>
 </html>
