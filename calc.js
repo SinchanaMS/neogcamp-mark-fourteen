@@ -45,7 +45,7 @@ function submitHandler() {
 {
     alert("Please enter valid details")
     
-} else if (document.getElementById("shares-quantity").value.length == 0){
+} else if (document.getElementById("shares-quantity").value.length == 0 || document.getElementById("shares-quantity").value<=0){
     alert("Please enter valid details")
 } else if (document.getElementById("current-price").value.length == 0) {
     alert("Please enter valid details")
